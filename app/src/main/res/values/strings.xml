@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Visiting Card</string>
+    <string-array name="country_list">
+        <item>Select A Country</item>
+        <item>USA</item>
+        <item>Bangladesh</item>
+    </string-array>
+</resources>
