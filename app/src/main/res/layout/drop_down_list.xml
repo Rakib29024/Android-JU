@@ -12,24 +12,23 @@
 <!--        android:layout_width="match_parent"-->
 <!--        android:layout_height="wrap_content"-->
 <!--        android:text="Country"/>-->
-<!--    <Spinner-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="40dp"-->
-<!--        android:layout_margin="10dp"-->
-<!--        android:id="@+id/country"-->
-<!--        android:popupBackground="#ffff"-->
-
-<!--        />-->
-<!--    <TextView-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:text="Country"/>-->
     <Spinner
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:layout_margin="10dp"
-        android:id="@+id/city"
-        android:popupBackground="#ffff"/>
+        android:id="@+id/country"
+        android:popupBackground="#ffff"
+        />
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Country"/>-->
+<!--    <Spinner-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="40dp"-->
+<!--        android:layout_margin="10dp"-->
+<!--        android:id="@+id/city"-->
+<!--        android:popupBackground="#ffff"/>-->
 
 
     <Button
@@ -38,11 +37,13 @@
         android:id="@+id/submitBtn"
         android:background="#FF9800"
         android:text="Submit"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_marginTop="50dp"
-        android:layout_height="wrap_content"
-        android:id="@+id/result"
-        android:textColor="#FF5722"
-        android:text="Result"/>
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_marginTop="50dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:id="@+id/result"-->
+<!--        android:textSize="42dp"-->
+<!--        android:textStyle="bold"-->
+<!--        android:textColor="#031659"-->
+<!--        android:text="Result"/>-->
 </LinearLayout>

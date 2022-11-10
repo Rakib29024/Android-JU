@@ -90,6 +90,7 @@
                         android:drawableLeft="@drawable/phone_android_12"
                         android:text="+880 1775555372"
                         android:textSize="10dp"
+                        android:id="@+id/phoneId"
                         android:textAlignment="textStart"
                         >
 
