@@ -8,16 +8,183 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center">
+        android:layout_height="0dp"
+        android:gravity="start"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:orientation="vertical"
+        android:background="#DAE6FF"
+        app:layout_constraintTop_toTopOf="parent">
         <TextView
+            android:id="@+id/name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="#034360"
-            android:textStyle="bold"
-            android:textSize="42dp"
-            android:text="Info"
+            android:layout_gravity="start"
             android:gravity="center"
-            android:id="@+id/result"/>
+            android:text="Country"
+            android:textColor="#030698"
+            android:textSize="36dp"
+            android:textStyle="bold" />
+        <ImageView
+            android:id="@+id/flag"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:padding="3dp"
+            tools:srcCompat="@tools:sample/avatars" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center"
+            >
+            <TextView
+                android:id="@+id/officialName"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/nativeName"
+                android:textSize="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/kumar"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="" />
+        </LinearLayout>
+
+<!--        -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Capital: "
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    android:paddingRight="5dp"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:id="@+id/capital"
+                    android:textSize="18dp"></TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Currencies: "
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    android:paddingRight="5dp"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:id="@+id/currencies"
+
+                    android:textSize="18dp"></TextView>
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ivPicture1"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Population: "
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    android:paddingRight="5dp"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:id="@+id/population"
+                    android:textSize="18dp"></TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Area: "
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    android:paddingRight="5dp"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:id="@+id/area"
+                    android:textSize="18dp"></TextView>
+
+            </LinearLayout>
+        </LinearLayout>
+<!---->
+        <WebView
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_gravity="bottom"
+            android:layout_height="match_parent" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
