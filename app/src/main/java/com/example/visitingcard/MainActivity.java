@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         title.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent in=new Intent(MainActivity.this, DropDownList.class);
+                Intent in=new Intent(MainActivity.this, StopWatch.class);
                 startActivity(in);
 
             }
